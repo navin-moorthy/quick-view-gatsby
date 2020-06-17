@@ -1,7 +1,15 @@
 import { theme as chakraTheme } from "@chakra-ui/core"
 
+const font =
+  'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
+
 const theme = {
   ...chakraTheme,
+  fonts: {
+    ...chakraTheme.fonts,
+    body: font,
+    heading: font,
+  },
   colors: {
     ...chakraTheme.colors,
     blue: {
