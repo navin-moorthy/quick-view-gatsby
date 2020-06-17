@@ -1,7 +1,6 @@
 import React, { useRef } from "react"
 import {
   Text,
-  Button,
   useTheme,
   Drawer,
   DrawerBody,
@@ -14,8 +13,7 @@ import {
   Flex,
 } from "@chakra-ui/core"
 
-import SEO from "../components/seo"
-import { ViewportCenter } from "../components/viewport-center"
+import { SEO, ViewportCenter, Button } from "../components"
 
 const IndexPage = () => {
   const theme = useTheme()
@@ -27,8 +25,8 @@ const IndexPage = () => {
   return (
     <ViewportCenter>
       <SEO title="Home" />
-      <Button ref={btnRef} variantColor="blue" onClick={onOpen}>
-        Open
+      <Button ref={btnRef} variantColor="blue" paddingX={4} onClick={onOpen}>
+        Quick View
       </Button>
       <Drawer
         isOpen={isOpen}
@@ -47,7 +45,7 @@ const IndexPage = () => {
 
           <DrawerFooter justifyContent="none">
             <Flex flex="1">
-              <Button variantColor="blue" w="full" mr={3} onClick={onClose}>
+              <Button variantColor="blue" w="full" onClick={onClose}>
                 Cancel
               </Button>
               <Button w="full">Save</Button>
