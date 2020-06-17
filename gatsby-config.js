@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Quick View Gatsby`,
     description: `Quick View template in Chakra UI using Gatsby`,
-    author: `@navin-moorthy`,
+    author: `@navin_moorthy`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
