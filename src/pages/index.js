@@ -8,9 +8,8 @@ import {
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
   useDisclosure,
-  Flex,
+  Stack,
 } from "@chakra-ui/core"
 
 import { SEO, ViewportCenter, Button } from "../components"
@@ -21,14 +20,14 @@ const IndexPage = () => {
 
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = useRef()
+  const drawerRef = useRef()
 
   return (
     <ViewportCenter>
       <SEO title="Home" />
       <Button
         ref={btnRef}
-        variantStyles="base"
-        variantColor="blue"
+        variantStyles="primarySolid"
         paddingX={4}
         onClick={onOpen}
       >
@@ -38,31 +37,46 @@ const IndexPage = () => {
         isOpen={isOpen}
         placement="right"
         onClose={onClose}
+        initialFocusRef={drawerRef}
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
         <DrawerContent maxW="700px">
-          <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
+          <DrawerHeader p="20px 30px">
+            <Stack isInline justifyContent="space-between">
+              <Button
+                variantStyles="unstyled"
+                leftIcon="arrow-back"
+                onClick={onClose}
+              ></Button>
+              <Button
+                variantStyles="unstyled"
+                leftIcon="share"
+                iconSpacing="12px"
+              >
+                Share
+              </Button>
+            </Stack>
+          </DrawerHeader>
 
           <DrawerBody>
             <Text children="Body Here" />
           </DrawerBody>
 
-          <DrawerFooter justifyContent="none">
-            <Flex flex="1">
-              <Button
-                variantStyles="base"
-                variantColor="blue"
-                w="full"
-                onClick={onClose}
-              >
+          <DrawerFooter justifyContent="none" padding="30px">
+            <Stack isInline flex="1" spacing="14px">
+              <Button ref={drawerRef} variantStyles="primarySolid" w="full">
                 Check Availability
               </Button>
-              <Button bg="gray.50" variantStyles="base" w="full">
+              <Button
+                variantStyles="secondarySolid"
+                w="full"
+                leftIcon="phone"
+                iconSpacing={2}
+              >
                 Call
               </Button>
-            </Flex>
+            </Stack>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
