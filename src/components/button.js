@@ -1,9 +1,10 @@
-import React from "react"
+import React, { forwardRef } from "react"
 import { Button as ChakraButton } from "@chakra-ui/core"
 
-export const Button = props => {
+export const Button = forwardRef((props, ref) => {
   return (
     <ChakraButton
+      ref={ref}
       height="38px"
       fontSize="sm"
       lineHeight="22px"
@@ -14,4 +15,4 @@ export const Button = props => {
       {...props}
     />
   )
-}
+})
