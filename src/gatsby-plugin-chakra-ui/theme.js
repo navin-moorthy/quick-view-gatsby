@@ -1,7 +1,12 @@
-import { theme as ChakraTheme } from "@chakra-ui/core"
+import { theme as chakraTheme } from "@chakra-ui/core"
 
 const theme = {
-  ...ChakraTheme,
+  ...chakraTheme,
+  sizes: {
+    ...chakraTheme.sizes,
+    vw: "100vw",
+    vh: "100vh",
+  },
 }
 
 export default theme
