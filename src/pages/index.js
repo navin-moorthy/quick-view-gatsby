@@ -25,7 +25,13 @@ const IndexPage = () => {
   return (
     <ViewportCenter>
       <SEO title="Home" />
-      <Button ref={btnRef} variantColor="blue" paddingX={4} onClick={onOpen}>
+      <Button
+        ref={btnRef}
+        variantStyles="base"
+        variantColor="blue"
+        paddingX={4}
+        onClick={onOpen}
+      >
         Quick View
       </Button>
       <Drawer
@@ -45,10 +51,17 @@ const IndexPage = () => {
 
           <DrawerFooter justifyContent="none">
             <Flex flex="1">
-              <Button variantColor="blue" w="full" onClick={onClose}>
-                Cancel
+              <Button
+                variantStyles="base"
+                variantColor="blue"
+                w="full"
+                onClick={onClose}
+              >
+                Check Availability
               </Button>
-              <Button w="full">Save</Button>
+              <Button bg="gray.50" variantStyles="base" w="full">
+                Call
+              </Button>
             </Flex>
           </DrawerFooter>
         </DrawerContent>

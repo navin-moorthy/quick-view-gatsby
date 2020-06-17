@@ -15,6 +15,14 @@ const colors = {
     800: "#003048",
     900: "#00121e",
   },
+  gray: {
+    ...chakraTheme.colors.gray,
+    50: "#F4F5F5",
+  },
+  blackAlpha: {
+    ...chakraTheme.colors.blackAlpha,
+    600: "#5D5E5E",
+  },
 }
 
 const font =
@@ -31,30 +39,36 @@ const sizes = {
   vh: "100vh",
 }
 
+const buttons = {
+  base: {
+    height: "38px",
+    paddingY: "8px",
+    paddingX: "0px",
+    fontSize: "sm",
+    fontWeight: "500",
+    lineHeight: "22px",
+    letterSpacing: "-0.12px",
+    borderRadius: "6px",
+  },
+}
+
 const theme = {
   ...chakraTheme,
   colors,
   fonts,
   sizes,
-  buttons: {
-    primary: {
-      color: colors.white,
-      backgroundColor: colors.blue,
-    },
-    secondary: {
-      color: colors.white,
-      backgroundColor: colors.green,
-    },
-    danger: {
-      color: colors.white,
-      backgroundColor: colors.red,
-    },
-  },
+  buttons,
 }
 /**
  * Brand theme Usage
  * blue.500: {
- *   Primary Button,
+ *   Primary Solid Button,
+ * }
+ * gray.50: {
+ *  Secondary Solid Button
+ * }
+ * blackAlpha.600 {
+ *  Seconddary Solid Button Text
  * }
  */
 

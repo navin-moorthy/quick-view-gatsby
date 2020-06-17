@@ -1,18 +1,9 @@
 import React, { forwardRef } from "react"
 import { Button as ChakraButton } from "@chakra-ui/core"
+import { useTheme } from "emotion-theming"
 
-export const Button = forwardRef((props, ref) => {
-  return (
-    <ChakraButton
-      ref={ref}
-      height="38px"
-      fontSize="sm"
-      lineHeight="22px"
-      letterSpacing="-0.12px"
-      paddingY="8px"
-      paddingX="0px"
-      borderRadius="6px"
-      {...props}
-    />
-  )
+export const Button = forwardRef(({ variantStyles, ...props }, ref) => {
+  const { buttons } = useTheme()
+
+  return <ChakraButton ref={ref} {...buttons[variantStyles]} {...props} />
 })
