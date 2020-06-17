@@ -2,6 +2,13 @@ import { theme as chakraTheme } from "@chakra-ui/core"
 
 const theme = {
   ...chakraTheme,
+  colors: {
+    ...chakraTheme.colors,
+    blue: {
+      ...chakraTheme.colors.blue,
+      500: "#1B91CF",
+    },
+  },
   sizes: {
     ...chakraTheme.sizes,
     vw: "100vw",
