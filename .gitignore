@@ -65,5 +65,15 @@ public
 yarn-error.log
 .pnp/
 .pnp.js
+
 # Yarn Integrity file
 .yarn-integrity
+
+
+# Storybook build
+storybook-static
+
+# Local Netlify folder
+.netlify
+.idea
+*.env
