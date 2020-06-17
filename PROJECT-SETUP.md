@@ -138,3 +138,17 @@ const theme = {
 
 export default theme
 ```
+
+### Style Guide
+
+All the themes tokens comes from theme.js
+
+Page layout only has the layout attributes
+
+**Note: Tried hard to follow the above buide**
+
+### Third Party App Support
+
+Color shades generated from [Smart Swatches](https://smart-swatch.netlify.app/)
+
+Svg optimized with [SVGOMG](https://jakearchibald.github.io/svgomg/)
