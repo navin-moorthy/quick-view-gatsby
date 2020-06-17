@@ -2,6 +2,8 @@
 
 ## Install Gatsby Starter
 
+SOURCE: [gatsby-starter-default](https://github.com/gatsbyjs/gatsby-starter-default)
+
 Create a new gatsby starter repo with basic structure
 
 ```shell
@@ -72,6 +74,8 @@ http://localhost:8000/___graphql
 - Delete all the components except image & seo
 
 ### Install and add Chakra-UI
+
+SOURCE: [gatsby-plugin-chakra-ui](https://github.com/chakra-ui/chakra-ui/tree/master/tooling/gatsby-plugin-chakra-ui)
 
 Install all the project dependencies for Chakra UI
 
