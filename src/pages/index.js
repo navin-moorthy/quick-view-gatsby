@@ -54,7 +54,7 @@ const IndexPage = () => {
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent maxW="700px">
+        <DrawerContent maxW="700px" overflowY="auto">
           <DrawerHeader p="20px 30px">
             <Stack isInline justifyContent="space-between">
               <Button
