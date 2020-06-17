@@ -23,6 +23,18 @@ export const buttons = {
     variantStyles: "base",
     variantColor: "blue",
   },
+  primaryGhost: {
+    ...baseButtonStyles,
+    variantStyles: "base",
+    bg: "blue.50",
+    color: "blue.500",
+    _hover: {
+      bg: "blue.50",
+    },
+    _active: {
+      bg: "blue.50",
+    },
+  },
   secondarySolid: {
     ...baseButtonStyles,
     variantStyles: "base",

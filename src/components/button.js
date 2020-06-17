@@ -1,6 +1,5 @@
 import React, { forwardRef } from "react"
-import { Button as ChakraButton, Icon } from "@chakra-ui/core"
-import { useTheme } from "emotion-theming"
+import { Button as ChakraButton, Icon, useTheme } from "@chakra-ui/core"
 
 export const Button = forwardRef(
   (
@@ -30,3 +29,7 @@ export const Button = forwardRef(
     )
   },
 )
+
+export const FullButton = forwardRef((props, ref) => {
+  return <Button ref={ref} w="full" {...props}></Button>
+})

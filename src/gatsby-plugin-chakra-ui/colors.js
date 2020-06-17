@@ -4,12 +4,12 @@ export const colors = {
   ...chakraTheme.colors,
   blue: {
     ...chakraTheme.colors.blue,
-    50: "#dcf7ff",
+    50: "#e6f6ff",
     100: "#b4e3fb",
     200: "#8acff2",
     300: "#5ebbeb",
     400: "#34a8e5",
-    500: "#1B91CF",
+    500: "#1b91cf",
     600: "#0d6f9f",
     700: "#024f73",
     800: "#003048",
@@ -17,12 +17,14 @@ export const colors = {
   },
   gray: {
     ...chakraTheme.colors.gray,
-    50: "#F4F5F5",
+    50: "#f4f5f5",
   },
   blackAlpha: {
     ...chakraTheme.colors.blackAlpha,
-    600: "#5D5E5E",
-    400: "#8C8D8E",
+    300: "#afb0b1",
+    400: "#8c8d8e",
+    600: "#5d5e5e",
+    800: "#282929",
   },
 }
 
@@ -30,6 +32,9 @@ export const colors = {
  * Brand theme Usage
  * blue.500: {
  *   Primary Solid Button,
+ * }
+ * blue.50: {
+ *  Primary Ghost Button
  * }
  * gray.50: {
  *  Secondary Solid Button
@@ -39,5 +44,12 @@ export const colors = {
  * }
  * blackAlpha.400 {
  *  Transparent Unstyled IconButton Text
+ *  Text sm
+ * }
+ * blackAlpha: 300 {
+ *  Text xs
+ * }
+ * blackAlpha: 800 {
+ *  Heading h4
  * }
  */
