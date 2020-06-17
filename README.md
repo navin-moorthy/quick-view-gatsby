@@ -11,4 +11,3 @@
 
 - Gatsby Website
 - Chakra UI
-- Storybook for Component Development
