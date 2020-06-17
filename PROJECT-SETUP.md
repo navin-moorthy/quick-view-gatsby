@@ -70,3 +70,67 @@ http://localhost:8000/___graphql
   export default IndexPage
   ```
 - Delete all the components except image & seo
+
+### Install and add Chakra-UI
+
+Install all the project dependencies for Chakra UI
+
+```shell
+yarn add gatsby-plugin-chakra-ui @chakra-ui/core @emotion/core @emotion/styled emotion-theming
+```
+
+Add gatsby-plugin-chakra-ui as a plugin in `gatsby-config.js`
+
+```js
+// gatsby-config.js
+module.exports = {
+  plugins: ["gatsby-plugin-chakra-ui"],
+}
+```
+
+By default, Chakra includes all the providers,
+
+```js
+<ThemeProvider theme={theme}>
+  <CSSReset />
+  <ColorModeProvider>{element}</ColorModeProvider>
+</ThemeProvider>
+```
+
+We have the option to disable it in `gatsby-config.js`
+
+```js
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: "gatsby-plugin-chakra-ui",
+      options: {
+        /**
+         * @property {boolean} [isResettingCSS=true]
+         * if false, this plugin will not use `<CSSReset />
+         */
+        isResettingCSS: true,
+        /**
+         * @property {boolean} [isUsingColorMode=true]
+         * if false, this plugin will not use <ColorModeProvider />
+         */
+        isUsingColorMode: true,
+      },
+    },
+  ],
+}
+```
+
+To use our own custom theme, shadow `gatsby-plugin-chakra-ui`,
+
+```js
+// src/gatsby-plugin-chakra-ui/theme.js
+import { theme as ChakraTheme } from "@chakra-ui/core"
+
+const theme = {
+  ...ChakraTheme,
+}
+
+export default theme
+```
