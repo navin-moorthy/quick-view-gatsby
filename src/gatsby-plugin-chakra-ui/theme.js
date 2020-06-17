@@ -9,4 +9,11 @@ const theme = {
   },
 }
 
+/**
+ * Brand theme Usage
+ * blue.500: {
+ *   Primary Button,
+ * }
+ */
+
 export default theme
