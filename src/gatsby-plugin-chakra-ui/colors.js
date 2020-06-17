@@ -26,6 +26,10 @@ export const colors = {
     600: "#5d5e5e",
     800: "#282929",
   },
+  green: {
+    ...chakraTheme.colors.green,
+    400: "#5fb87d",
+  },
 }
 
 /**
@@ -46,10 +50,13 @@ export const colors = {
  *  Transparent Unstyled IconButton Text
  *  Text sm
  * }
- * blackAlpha: 300 {
+ * blackAlpha.300 {
  *  Text xs
  * }
- * blackAlpha: 800 {
+ * blackAlpha.800 {
  *  Heading h4
+ * }
+ * green.400 {
+ *  Alert Success
  * }
  */

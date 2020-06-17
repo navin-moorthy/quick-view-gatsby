@@ -90,6 +90,7 @@ const IndexPage = () => {
             <Alert
               status="success"
               variant="solid"
+              bg="green.400"
               marginBottom="74px"
               p="18px 24px"
               borderRadius="lg"
