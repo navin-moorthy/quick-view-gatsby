@@ -32,6 +32,11 @@ UI Tool to visually experiment by quering our data
 http://localhost:8000/___graphql
 ```
 
+## Modify `gatsby-config.js`
+
+- Change the `siteMetadata`
+- Change the `gatsby-plugin-manifest` options as needed.
+
 ## Remove boiler-plate files that come with the starter
 
 - Delete all the images

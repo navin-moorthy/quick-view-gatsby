@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `quick-view-gatsby`,
-        short_name: `starter`,
+        short_name: `quick-view`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
