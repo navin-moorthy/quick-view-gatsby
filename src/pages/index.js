@@ -33,24 +33,19 @@ const IndexPage = () => {
 
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = useRef()
-  const drawerRef = useRef()
+  const initialFocusRef = useRef()
 
   return (
     <ViewportCenter>
       <SEO title="Home" />
-      <Button
-        ref={btnRef}
-        variantStyles="primarySolid"
-        paddingX={4}
-        onClick={onOpen}
-      >
+      <Button ref={btnRef} variantStyles="primarySolid" onClick={onOpen}>
         Quick View
       </Button>
       <Drawer
         isOpen={isOpen}
         placement="right"
         onClose={onClose}
-        initialFocusRef={drawerRef}
+        initialFocusRef={initialFocusRef}
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
@@ -118,7 +113,7 @@ const IndexPage = () => {
             </Alert>
 
             <FullButton
-              ref={drawerRef}
+              ref={initialFocusRef}
               variantStyles="primaryGhost"
               marginBottom={2}
             >
