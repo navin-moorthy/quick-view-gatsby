@@ -1,7 +1,7 @@
-const baseButtonStyles = {
+const quickViewButtonStyle = {
   height: "38px",
-  paddingY: "8px",
-  paddingX: "0px",
+  paddingY: 2,
+  paddingX: 4,
   fontSize: "sm",
   fontWeight: "500",
   lineHeight: "22px",
@@ -17,14 +17,14 @@ export const buttons = {
     height: "20px",
     minW: "20px",
   },
-  base: baseButtonStyles,
+  base: quickViewButtonStyle,
   primarySolid: {
-    ...baseButtonStyles,
+    ...quickViewButtonStyle,
     variantStyles: "base",
     variantColor: "blue",
   },
   primaryGhost: {
-    ...baseButtonStyles,
+    ...quickViewButtonStyle,
     variantStyles: "base",
     bg: "blue.50",
     color: "blue.500",
@@ -36,7 +36,7 @@ export const buttons = {
     },
   },
   secondarySolid: {
-    ...baseButtonStyles,
+    ...quickViewButtonStyle,
     variantStyles: "base",
     background: "gray.50",
     color: "blackAlpha.600",
