@@ -30,6 +30,10 @@ export const colors = {
     ...chakraTheme.colors.green,
     400: "#5fb87d",
   },
+  yellow: {
+    ...chakraTheme.colors.yellow,
+    500: "#e2a812",
+  },
 }
 
 /**
@@ -58,5 +62,8 @@ export const colors = {
  * }
  * green.400 {
  *  Alert Success
+ * }
+ * yellow.500 {
+ *  Amenities Icon
  * }
  */

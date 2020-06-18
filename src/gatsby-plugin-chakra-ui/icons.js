@@ -73,4 +73,39 @@ export const icons = {
     ),
     viewBox: "0 0 26 26",
   },
+  washer: {
+    path: (
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M20.33 0c.75 0 1.35.6 1.35 1.36v18.97c0 .75-.6 1.35-1.35 1.35H1.36c-.75 0-1.36-.6-1.36-1.35V1.36C0 .6.6 0 1.36 0h18.97zM1.36 7.45v12.88h18.97V7.45H1.36zM20.33 6.1H1.36V1.36h18.97V6.1zm-9.15 2.7a5.08 5.08 0 100 10.17 5.08 5.08 0 000-10.16zm0 1.36a3.73 3.73 0 110 7.46 3.73 3.73 0 010-7.46zM2.03 3.4c0-.38.3-.68.68-.68H6.1a.68.68 0 110 1.36H2.7a.68.68 0 01-.68-.68zM18.3 2.7a.68.68 0 000 1.36h.67a.68.68 0 000-1.36h-.67zm-3.4.68c0-.38.31-.68.68-.68h.68a.68.68 0 010 1.36h-.68a.68.68 0 01-.67-.68z"
+        clipRule="evenodd"
+      />
+    ),
+    viewBox: "0 0 22 22",
+  },
+  bedroom: {
+    path: (
+      <>
+        <path
+          stroke="currentColor"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          d="M19 15a2 2 0 01-2 2H3a2 2 0 01-2-2V3c0-1.1.9-2 2-2h14a2 2 0 012 2v12z"
+          clipRule="evenodd"
+        />
+        <path
+          stroke="currentColor"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          d="M8 17v-6.5M14 12V6M8 6V1M5.5 6H9M14 9h5"
+        />
+      </>
+    ),
+    viewBox: "0 0 20 18",
+  },
 }

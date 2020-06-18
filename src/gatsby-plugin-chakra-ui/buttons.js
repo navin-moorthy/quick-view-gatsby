@@ -12,6 +12,7 @@ const quickViewButtonStyle = {
 export const buttons = {
   unstyled: {
     variant: "unstyled",
+    bg: "transparent",
     color: "blackAlpha.400",
     display: "inline-flex",
     height: "20px",

@@ -1,6 +1,6 @@
 import React from "react"
 
-import { HStack, Button } from "../.."
+import { HStack, Button, Text } from "../.."
 
 const Header = ({ onClose, ...props }) => {
   return (
@@ -12,7 +12,9 @@ const Header = ({ onClose, ...props }) => {
       />
 
       <Button variantStyles="unstyled" leftIcon="share" iconSpacing={3}>
-        Share
+        <Text variantStyles="sm" color="blackAlpha.400">
+          Share
+        </Text>
       </Button>
     </HStack>
   )
