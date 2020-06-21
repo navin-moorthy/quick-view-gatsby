@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/core"
 
 import Header from "./header"
-import Footer from "./Footer"
+import Footer from "./footer"
 import Body from "./body"
 
 export const QuickViewDrawer = ({
